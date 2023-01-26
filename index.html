@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priel's Portfolio</title>
+    <link rel="stylesheet" href="style.css"
+
+</head>
+<body>
+<div id = "header">
+    <div class="container">
+        <nav>
+            <img src = "priel1.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>part time CS student, full time Learner</p>
+            <h1>Welcome to <span class = "auto-type"></span></h1>
+        </div>
+
+        <style>
+            body {
+              background-image: url('green.png');
+            }
+            </style>
+    
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["Priel's Webspace :)"],
+                typeSpeed: 150,
+                backSpeed: 150, 
+                loop: true
+            })
+        </script>
+
+</div>
+<!--------------about---------------->
+<div id="about">
+    <div class ="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="userphoto.png">
+            </div>
+            <div class="about-col-2">
+                <h1>About Me</h1>
+                <p> I am currently a computer science student at The College of New Jersey. I have had a passion for programming since high school, and have taught myself various languages. I have great interest in furthering my skills, and learning more about artificial intelligence, computational finance, and mathematical analysis. I hope to utilize my computer knowledge in the finance industry and broaden my horizons.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Java<br>Python<br>C++<br>HTML & CSS</li>
+                        <li><span>Microsoft Office</span><br>Excel<br>Word<br>Powerpoint</li>
+                        <li><span>Google Analytics</span><br>Basic Certification<br>Advanced Certification</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Involvements, 2021- present</span><br>College Ambassador<br>Orientation Leader<br>Student Government Senator<br>Member of Sigma Kappa & Girls who Code</li>
+                        <li><span>Research, 2021- present</span><br>Ever Related Potentials Lab</li>
+                        <li><span>Work, 2019- present</span><br>Checkout Advocate, Target<br>Bookseller, Barnes and Nobles</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2025</span><br>The College of New Jersey</li>
+                        <li><span>Dean's List</span><br>Fall 2021, Spring 2022, Fall 2022</li>
+                        
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="werk1.jpg">
+                <div class="layer">
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>A two player game that involves placing X's and O's on a grid through alternating turns. Created on Python through replit.</p>
+                    <a href="https://replit.com/@PrielSrivastava/Tic-Tac-Toe#main.py"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="werk1.jpg">
+                <div class="layer">
+                    <h3>Tip Calculator</h3>
+                    <p>The appliance allows you to determine a suitable tipping amount depending on the amount of guests present, and how much the total was. Created on Python through replit.</p>
+                    <a href="https://replit.com/@PrielSrivastava/Tic-Tac-Toe#main.py"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="werk1.jpg">
+                <div class="layer">
+                    <h3>Paddle Game</h3>
+                    <p>A simple version of ping pong, which can be played on devices, against a computer opponent. Created on Python through replit.</p>
+                    <a href="https://replit.com/@PrielSrivastava/Paddle-Game#main.py"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">New Projects Incoming...</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Let's Chat!</h1>
+                <p><i class="fas fa-paper-plane"></i> personal email: pppriel@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> school email: srivasp2@tcnj.edu</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="psresume.png" download class="btn btn2">Resume/CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Built by Priel Srivastava <i class="fas fa-heart"></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzbrEv_c3mQ9dqmji88imXtbANyGD2HHcakZluM_SvBj6VUmj7xb3KBYUCe4E5sTyAK/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
